@@ -1,0 +1,70 @@
+body
+{
+    background-color: black;
+}
+.grid-container
+{   
+    position: absolute;
+    top:35vh;
+    bottom:35vh;
+    left:45vw;
+    right:0vw;
+    display:grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+    row-gap: 3px;
+    column-gap: 3px;
+    
+    
+}
+
+.grid-item
+{
+    height:50px;
+    width:50px;
+    display:flex;
+    background-color:green;
+    border:none;
+    border-radius: 15px;
+}
+#i1 { animation:animate 1s infinite;}
+#i2 { animation:animate 2s infinite;}
+#i3 { animation:animate 1s infinite;}
+#i4 { animation:animate 2s infinite;}
+#i5 { animation:animate 1s infinite;}
+#i6 { animation:animate 2s infinite;}
+#i7 { animation:animate 1s infinite;}
+#i8 { animation:animate 2s infinite;}
+#i9 { animation:animate 1s infinite;}
+
+
+
+@keyframes animate
+{
+    0%,100%
+    {
+        transform:scale(1);
+        
+    }
+    25%
+    {
+        transform:scale(0.5);
+        
+    }
+    50%
+    {
+        transform:scale(1);
+        background-color: aquamarine;
+       
+     
+    }
+    75%
+    {
+        transform:scale(0.5);
+       
+    }
+}
+
+
+
+
